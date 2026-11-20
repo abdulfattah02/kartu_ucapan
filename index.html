@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pesan Spesial — Cepet Sembuh Ya!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HALAMAN 1: LOGIN PASSWORD -->
+  <section id="login-screen" class="card" aria-labelledby="login-title">
+    <div class="badge">🔐 Halaman Khusus</div>
+    <div class="icon-float" aria-hidden="true">💌</div>
+    <h1 id="login-title">Masukkan Kata Sandi</h1>
+    <p class="message">
+      Ada pesan yang aku siapkan buat kamu. Masukkan kata sandinya!!.
+    </p>
+
+    <form id="login-form" class="login-form" novalidate>
+      <div class="input-group">
+        <label for="password-input" class="sr-only">Kata Sandi</label>
+        <input
+          type="password"
+          id="password-input"
+          class="password-input"
+          placeholder="Ketik kata sandi di sini..."
+          autocomplete="current-password"
+          required
+        />
+        <button
+          type="button"
+          id="toggle-password"
+          class="toggle-btn"
+          aria-label="Tampilkan atau sembunyikan kata sandi"
+          title="Tampilkan / Sembunyikan"
+        >
+          <!-- Ikon Mata Terbuka -->
+          <svg id="eye-open" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          <!-- Ikon Mata Tertutup -->
+          <svg id="eye-closed" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+            <line x1="1" y1="1" x2="23" y2="23"></line>
+          </svg>
+        </button>
+      </div>
+
+      <p id="error-msg" class="error-msg hidden" role="alert">
+        Kata sandi belum tepat. Coba periksa lagi ya!
+      </p>
+
+      <button type="submit" class="btn-primary">
+        Buka Pesan →
+      </button>
+    </form>
+
+    <div class="hint-box">
+      <div class="hint-title">💡 Petunjuk kata sandi (klik untuk mencoba):</div>
+      <div class="hint-chips">
+        <button type="button" class="hint-chip" data-pass="020206">******</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      Aku buat ini untuk kamu cinayy
+    </div>
+  </section>
+
+  <!-- HALAMAN 2: KARTU UCAPAN -->
+  <main id="greeting-screen" class="card hidden" aria-labelledby="greeting-title">
+    <div class="top-bar">
+      <div class="badge">🌿 Doa &amp; Dukungan Hangat</div>
+      <button type="button" id="lock-btn" class="btn-ghost" title="Kembali ke halaman kunci">
+        🔒 Kunci
+      </button>
+    </div>
+
+    <div class="icon-float" aria-hidden="true">❤️</div>
+    <h1 id="greeting-title">Cepet Sembuh Ya!</h1>
+    <p class="message">
+      Jangan lupa makan dan minum obatnya, biar bisa balik beraktivitas seperti biasa.
+    </p>
+
+    <div class="highlight-box">
+      “Gak usah mikirin hal-hal lain dulu ya, fokus aja istirahat dan sembuh. Banyak yang sayang dan nungguin kamu sehat lagi.”
+    </div>
+
+    <div class="tips">
+      <span class="tip-pill">🍽️ Makan teratur</span>
+      <span class="tip-pill">💊 Minum obat</span>
+      <span class="tip-pill">😴 Istirahat cukup</span>
+    </div>
+
+    <div class="footer">
+      Selalu mendoakan yang terbaik untukmu,<br />
+      <strong>Dari [Fattah]</strong>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
